@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motomamis Technology</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f3f3f3; 
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr 400px;
+            min-height: 100vh;
+        }
+
+       
+        .menu {
+            background-color: #0047ab; 
+            color: #ffc107; 
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .menu h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            margin: 15px 0;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #ffc107;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            color: #ffffff; 
+        }
+
+        .content {
+            padding: 40px;
+            text-align: left;
+            background-color: #ffffff;
+            border-left: 1px solid #dddddd;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0047ab; 
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .ring {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .ring img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ring .description {
+            max-width: 50%;
+        }
+
+        .ring .description h2 {
+            font-size: 2em;
+            color: #0047ab;
+            margin-bottom: 10px;
+        }
+
+        .ring .description p {
+            font-size: 1.1em;
+            color: #333333;
+        }
+
+        footer {
+            background-color: #0047ab; 
+            color: #ffc107; 
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+       
+        <nav class="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Bienvenido</a></li>
+                <li><a href="anell.html">Anillos</a></li>
+            </ul>
+        </nav>
+
+       
+        <div class="content">
+            <h1>Bienvenido a Motomamis Technology</h1>
+            <p>
+                En Motomamis Technology, nos dedicamos a la innovación tecnológica para mejorar tu vida. Descubre nuestros anillos futuristas,
+                diseñados con energía solar y funciones avanzadas.
+            </p>
+
+          
+            <section id="anillo1" class="ring">
+                <img src="imatge/basic.png" alt="Anillo 1" width="400px">
+                <div class="description">
+                    <h2>DataRing versión estándar</h2>
+                    <p>
+                        - Carga solar <br></br>                   
+                        - 512GB de almacenamiento<br></br>
+                        - 30GB/s<br></br>
+                        - Bluethoot v6<br></br>
+                        - 4GB RAM<br></br>
+                        - Pantalla HD 75Hz<br></br>
+                        - 150€-200€ <br></br>
+                    </p>
+                </div>
+            </section>
+
+           
+            <section id="anillo2" class="ring">
+                <img src="imatge/anell.webp" alt="Anillo 2" width="400px">
+                <div class="description">
+                    <h2>DataRing versión PRO</h2>
+                    <p>
+                        - Carga solar <br></br>                   
+                        - 1TB de almacenamiento<br></br>
+                        - 50GB/s<br></br>
+                        - Bluethoot v6<br></br>
+                        - 6GB RAM<br></br>
+                        - Pantalla HD 75Hz<br></br>
+                        - 250€-300€ <br></br>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+   
+    <footer>
+        <p>© 2024 Motomamis Technology</p>
+    </footer>
+</body>
+</html>
